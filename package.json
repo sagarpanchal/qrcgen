@@ -1,0 +1,43 @@
+{
+  "name": "qrcgen",
+  "version": "0.0.1",
+  "description": "Blazingly fast library to generate QR codes",
+  "main": "src/index.js",
+  "scripts": {
+    "prepare": "husky install ./.husky",
+    "format": "prettier --write \"src/**/*.{js,jsx,json}\" && eslint --fix \"src/**/*.{js,jsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagarpanchal/qrcgen"
+  },
+  "keywords": [
+    "qr",
+    "qrcode",
+    "generate",
+    "svg",
+    "qrc"
+  ],
+  "author": "Sagar Panchal <panchal.sagar@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.8",
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "src/**/*.json": [
+      "prettier --write"
+    ]
+  }
+}
