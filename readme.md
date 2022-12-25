@@ -2,7 +2,7 @@
 
 ## Example
 
-- JavaScript
+### JavaScript
 
 ```JavaScript
 const text = `https://github.com/sagarpanchal/qrcgen`
@@ -11,7 +11,7 @@ const svgString = Code.toSVGString()
 document.body.innerHTML = svgString
 ```
 
-- React
+### React
 
 ```JSX
 import React from "react"
